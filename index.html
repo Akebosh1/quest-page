@@ -70,6 +70,19 @@
         <div class="choice">
             <button class="button" onclick="alert('Ну а как иначе')">✅ Да, понравилось!</button>
             <button class="button no" onclick="alert('404')">⏪ Сделать сальто назад (нет)</button>
+            <button class="button" onclick="openYouTube()">▶Не нажимать</button>
+
+<script>
+function openYouTube() {
+    // Try opening in app
+    window.location.href = "youtube://dQw4w9WgXcQ";
+    // Fallback to browser after short delay
+    setTimeout(() => {
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+    }, 1500);
+}
+</script>
+
         </div>
     </div>
 </body>
