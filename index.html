@@ -70,18 +70,16 @@
         <div class="choice">
             <button class="button" onclick="alert('Ну а как иначе')">✅ Да, понравилось!</button>
             <button class="button no" onclick="alert('404')">⏪ Сделать сальто назад (нет)</button>
-            <button class="button" onclick="openYouTube()">▶Не нажимать</button>
+            <button class="button" onclick="showGif()">▶Mystery button</button>
+
+<img id="myGif" src="rickroll.gif" style="display:none; margin-top: 20px; max-width: 100%; border-radius: 10px;" />
 
 <script>
-function openYouTube() {
-    // Try opening in app
-    window.location.href = "youtube://dQw4w9WgXcQ";
-    // Fallback to browser after short delay
-    setTimeout(() => {
-        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
-    }, 1500);
+function showGif() {
+    document.getElementById("myGif").style.display = "block";
 }
 </script>
+
 
         </div>
     </div>
